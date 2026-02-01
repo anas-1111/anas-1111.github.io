@@ -2,76 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Anas El-Alfy | Data Engineer & Analytics Specialist</title>
+  <title>Anas El-Alfy | Data & AI Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <style>
+    :root {
+      --bg: #020617;
+      --card: #020617;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent2: #a855f7;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #0f172a;
-      color: #e5e7eb;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: radial-gradient(circle at top, #020617, #000);
+      color: var(--text);
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #020617, #020617);
-      padding: 60px 20px;
       text-align: center;
+      padding: 70px 20px;
     }
 
     header img {
-      width: 140px;
-      height: 140px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #38bdf8;
+      border: 3px solid var(--accent);
       margin-bottom: 15px;
     }
 
     header h1 {
       margin: 10px 0 5px;
+      font-size: 34px;
     }
 
     header p {
-      color: #94a3b8;
+      color: var(--muted);
+      max-width: 700px;
+      margin: auto;
+    }
+
+    header a {
+      color: var(--accent);
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     section {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     h2 {
-      color: #38bdf8;
-      margin-bottom: 15px;
+      color: var(--accent);
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
 
     .card {
-      background: #020617;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 0 1px rgba(148,163,184,0.1);
+      background: linear-gradient(180deg, #020617, #020617);
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: 0 0 0 1px rgba(148,163,184,0.12);
     }
 
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent2);
+    }
+
+    .muted {
+      color: var(--muted);
     }
 
     ul {
       padding-left: 18px;
     }
 
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
     footer {
       text-align: center;
-      padding: 25px;
+      padding: 30px 20px;
       background: #020617;
+      color: var(--muted);
       font-size: 14px;
-      color: #94a3b8;
     }
   </style>
 </head>
@@ -79,12 +118,13 @@
 <body>
 
 <header>
-  <!-- غير اسم الصورة لو مختلف -->
-  <img src="profile.png" alt="Anas El-Alfy">
+  <img src="profile.jpg" alt="Anas El-Alfy">
   <h1>Anas Ibrahem El-Alfy</h1>
-  <p>Data Engineer | Analytics | AI Background</p>
   <p>
-    <a>+201002998021</a> |
+    Data Engineer & AI Engineer with hands-on experience building end-to-end data pipelines,
+    analytics platforms, and applied AI systems including ML, DL, and LLM-based solutions.
+  </p>
+  <p style="margin-top:15px;">
     <a href="mailto:eng.anaselalfy@gmail.com">Email</a> |
     <a href="https://github.com/anas-1111" target="_blank">GitHub</a> |
     <a href="https://www.linkedin.com/in/anas-el-alfy-31254b222/" target="_blank">LinkedIn</a>
@@ -92,71 +132,117 @@
 </header>
 
 <section>
-  <h2>About Me</h2>
-  <div class="card">
-    <p>
-      Data Engineer with hands-on experience in building end-to-end ETL/ELT pipelines,
-      data modeling, and analytics solutions using SQL, Python, Microsoft Fabric, SSIS,
-      and Power BI.
-    </p>
-    <p>
-      Strong background in Artificial Intelligence, with applied experience in data analysis,
-      machine learning, and business-focused analytics solutions.
-    </p>
+  <h2>What I Do</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Data Engineering & Analytics</h3>
+      <ul>
+        <li>ETL / ELT Pipelines & Data Integration</li>
+        <li>Data Warehousing & Star Schema Modeling</li>
+        <li>Microsoft Fabric & Lakehouse Architecture</li>
+        <li>Power BI, DAX & Business Insights</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Applied AI & LLM Systems</h3>
+      <ul>
+        <li>Machine Learning & Deep Learning</li>
+        <li>Computer Vision & NLP</li>
+        <li>RAG Pipelines & Vector Databases</li>
+        <li>LLM-based Agents & Model Deployment</li>
+      </ul>
+    </div>
   </div>
 </section>
 
 <section>
-  <h2>Freelance Experience</h2>
+  <h2>Freelance & Industry Work</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Freelance Yard – Sales Analytics</h3>
+      <p class="muted">
+        Built ETL pipelines and Power BI dashboards to analyze sales performance and
+        support business growth and planning for the new year.
+      </p>
+      <ul>
+        <li>HandyHelp Services</li>
+        <li>Café Aroma Pipeline</li>
+        <li>Café Il-Gżira</li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <h3>HandyHelp Services</h3>
-    <p>
-      Built ETL pipelines and Power BI dashboards to analyze sales performance and customer trends.
-      Delivered actionable insights to support sales optimization and planning for the new fiscal year.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>Café Aroma Pipeline</h3>
-    <p>
-      Designed data models and Power BI reports to track daily and monthly sales.
-      Helped improve product performance analysis and revenue visibility.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>Café Il-Gżira</h3>
-    <p>
-      Implemented ETL workflows and interactive dashboards to evaluate sales growth,
-      peak hours, and product profitability ahead of the new year.
-    </p>
+    <div class="card">
+      <h3>Industry Experience</h3>
+      <ul>
+        <li><strong>Global Brands Group (GBG):</strong> ETL/ELT pipelines & data quality</li>
+        <li><strong>KoraStats:</strong> Sports data validation & QA workflows</li>
+        <li><strong>NTI:</strong> Applied AI & analytics pipelines</li>
+      </ul>
+    </div>
   </div>
 </section>
 
 <section>
-  <h2>Featured Projects</h2>
+  <h2>Data Engineering Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Supply Chain Sales Analytics (Fabric)</h3>
+      <p>
+        End-to-end analytics platform using Fabric Lakehouse, Dataflow Gen2,
+        Star Schema modeling, SSAS Tabular, and Power BI dashboards.
+      </p>
+      <a class="button" href="https://github.com/anas-1111" target="_blank">View Project</a>
+    </div>
 
-  <div class="card">
-    <h3>Supply Chain Sales Analytics (Microsoft Fabric)</h3>
-    <p>
-      End-to-end analytics solution using Fabric Lakehouse, Dataflow Gen2,
-      Star Schema modeling, SSAS Tabular, and Power BI dashboards.
-    </p>
-    <a href="https://github.com/anas-1111/Sales-Supply-Chain" target="_blank">
-      View on GitHub →
-    </a>
+    <div class="card">
+      <h3>Banking Business Intelligence Platform</h3>
+      <p>
+        Enterprise BI solution with SSIS pipelines, data warehouse design,
+        and KPI-driven dashboards.
+      </p>
+      <a class="button" href="https://github.com/anas-1111" target="_blank">View Project</a>
+    </div>
   </div>
+</section>
 
-  <div class="card">
-    <h3>Banking Business Intelligence Platform</h3>
-    <p>
-      Enterprise BI solution with SSIS pipelines, data warehouse modeling,
-      semantic layer design, and KPI dashboards.
-    </p>
-    <a href="https://github.com/anas-1111/Bank" target="_blank">
-      View on GitHub →
-    </a>
+<section>
+  <h2>Applied AI & LLM Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Assistant Referee for Football (RAG)</h3>
+      <p>
+        RAG-based QA system using HuggingFace embeddings, FAISS, and LLaMA 3.3,
+        delivered via Streamlit.
+      </p>
+      <a class="button" href="https://github.com/anas-1111/Assistant-referee-for-football-situations" target="_blank">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>MediMind – Smart Medical AI</h3>
+      <p>
+        Medical AI assistant using OCR, face recognition, RAG pipelines,
+        and deployed APIs with Flask and FAISS.
+      </p>
+      <a class="button" href="https://github.com/anas-1111/SMS-Smart-Medical-System-" target="_blank">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Head Pose Estimation API</h3>
+      <p>
+        Real-time head pose estimation using Mediapipe Face Mesh,
+        Random Forest, FastAPI, and Docker.
+      </p>
+      <a class="button" href="https://github.com/anas-1111/rf-headpose-detection" target="_blank">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>X-Ray Disease Detection Platform</h3>
+      <p>
+        Graduation project: end-to-end medical imaging platform for disease
+        detection using DL models and YOLOv8.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -164,7 +250,9 @@
   <h2>Tech Stack</h2>
   <div class="card">
     <p>
-      SQL • Python • Microsoft Fabric • Power BI • SSIS • SSAS • Azure • Git • Docker • Airflow
+      Python • SQL • PyTorch • TensorFlow • HuggingFace • FAISS • FastAPI •
+      Microsoft Fabric • Power BI • SSIS • SSAS • Azure • AWS • GCP •
+      Docker • Airflow • Git
     </p>
   </div>
 </section>
@@ -172,14 +260,13 @@
 <section>
   <h2>Contact</h2>
   <div class="card">
-    <p>Phone: <strong>+201002998021</strong></p>
     <p>Email: <strong>eng.anaselalfy@gmail.com</strong></p>
-    <p>Location: Egypt (Remote / Hybrid)</p>
+    <p>Location: Egypt — Open to Remote / Hybrid</p>
   </div>
 </section>
 
 <footer>
-  © 2026 Anas El-Alfy — Data Engineering Portfolio
+  © 2026 Anas El-Alfy — Data & AI Engineering Portfolio
 </footer>
 
 </body>
